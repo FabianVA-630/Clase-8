@@ -145,15 +145,7 @@ td:nth-child(3) {
 							<th>Prof. Guía</th>
                         </tr>
                     </thead>
-                    <tbody> id="este">
-						<tr>
-							<th>Acevedo Aburto, Natalia Francisca</th>
-							<th>NOS CUIDAMOS: Diseño de información para el acompañamiento de cuidadoras de personas mayores. Plan piloto en la comuna de San Joaquín. Cesfam San Joaquín y Santa Teresa de los Andes.</th>
-							<th>7</th>
-							<th>Diseño para la Salud y Bienestar</th>
-							<th>Prof. Felipe Cortez Orellana</th>
-						</tr>
-					</tbody>
+                    <tbody id="este"></tbody>
                 </table>
             </div>
             <small>Diseño y visualización de información</small>
@@ -662,7 +654,7 @@ td:nth-child(3) {
                     var trabajo = datos.data;
                     console.log(trabajo);
                     trabajo.forEach((x) => {
-                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.id}</td><td>${x.name}</td><td>${x.track}</td><td>${x.group}</td><td>${x.focus}</td></tr>`;
+                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.name}</td><td>$</td><td>${x.title}</td><td>${x.grade}</td><td>${x.category}</td><td>${x.tutor}</td></tr>`;
                     });
                 })
                 .catch((error) => {
